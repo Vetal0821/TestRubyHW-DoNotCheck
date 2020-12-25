@@ -1,0 +1,20 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+html,boby,header, #intro {
+	height:100%
+}
+#intro {
+
+-webkit-background-size: cover;
+background-size:cover;
+}
+
+
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}

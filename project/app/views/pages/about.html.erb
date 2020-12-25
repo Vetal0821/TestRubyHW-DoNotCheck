@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>about</title>
+  </head>
+  <body>
+
+<div class="wrapper">
+
+  <div class="content"></div>
+
+  <div class="footer"></div>
+
+</div>
+
+  	<header>
+<nav class="navbar navbar-expand-lg navbardark fixed-top scrolling-navbar">
+	<div class="container">
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfc8Ecox_tOKLJneaHfDptW-j4Sgi-CM0MieQbwgd_38GS8Ng/viewform" class="navbar-brand">HW7</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNaw" aria-controls="basicExampleNaw" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+			
+			</button>
+<div class="collapse navbar-collapse" id=basicExampleNaw>
+	<ul class="navbar-nav mr-auto smooth-scroll">
+		<li class="nav-item">
+			<a href="http://localhost:3000/" class="nav-link waves-effect waves-light">Home</a>	
+		</li>
+				<li class="nav-item">
+			<a href="http://localhost:3000/posts" class="nav-link waves-effect waves-light">posts</a>	
+		</li>
+				<li class="nav-item">
+			<a href="http://localhost:3000/about" class="nav-link waves-effect waves-light">about</a>	</li>
+              <li class="nav-item">
+      <a href="http://localhost:3000/comments" class="nav-link waves-effect waves-light">comments</a> 
+    </li>
+	</ul>
+</div>
+
+	</div>
+</nav>
+</header>
+
+
+<main>
+
+<div id="intro" class="view">
+   <div class="mask rgba-black-strong">
+	<div class="container-fluid d-flex aling-items-center justify-content-center h-100">
+     <div class="row d-flex justify-content-center text-center">
+	  <div class="col-md-10">
+
+			<hr class="hr-light">
+			<h4 class="white-text my-4"> </h4>			
+	  </div>
+	 </div>
+	</div>	
+   </div>
+  </div>
+
+<div>
+	<p><h1 class="text-center">RoR GH 20/21 Homework 7</h1></p>
+	<p><h4>Нужно сгенерировать рельсовый проект и сгенерировать сущность Posts используя скафолд. Установить бутстрап гем, использовать его для вьюх (добавить вёрстку во вьюхах).</h4></p>
+	<p class="text-center"><h4>Шаги:</h4></p>
+<ol>
+   <li>Настроить RubyMine (или удобный для вас редактор)</li>
+   <li>Установить RoR 6.1 (gem install rails)</li>
+   <li>Убедиться что установлена нужная версия рельс (rails -v)</li>
+   <li>Сгенерировать рельсовый проект (rails new project_name)</li>
+   <li>Сгенерировать сущности Post используя скафолд и затем прогнать миграцию</li>
+   <ul>
+     <li>rails generate scaffold Post name:string title:string content:text image:string</li>
+     <li>rake db:migrate</li>
+ </ul>
+   <li>Запустить проект (убедиться что всё работает)</li>
+   <li>Установить бутстрап</li>
+   <li>Применить вёрстку используя бутстрап</li>
+   <li>Использовать обязательно RVM или rbenv</li>
+   <li> Настроить свою IDE или Text Editor согласно Ruby style code (два пробела, а не таб и т.д.)</li>
+   <li>сделать страницу постов (index) корневой страницей проекта</li>
+   <li>добавить валидацию (проверку наличия данных, максимального размера для title) полей поста (title, content)</li>
+   <li>создать модель Author (только модель (rails g model), таблица будет заполняться с помощью seed, создать 5 авторов)</li>
+   <li>Поля автора: first_name, last_name, gender, birthday (сгенерировать данные с помощью гема faker, тип полей в соответсвии с назначением (string, datetime))</li>
+   <li> при создании или редактировании поста - автора мы должны выбирать с помощью выпадающего списка.</li>
+   <li>Поле image – url. Выводить на странице поста между title и description через хелпер/метод image_tag.</li>
+   <li>Залить на Хероку.</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+</main>
+ <!-- <footer>
+  	<div class="text-center">Copyright 2020</div>
+  </footer>-->
+  </body>
+</html>
