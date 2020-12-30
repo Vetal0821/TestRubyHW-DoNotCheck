@@ -18,6 +18,7 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <span class="p-2 text-dark"><%= link_to "Main page", home_path %></span>
     <span class="p-2 text-dark"><%= link_to "Add articles", new_post_path %></span>
+    <span class="p-2 text-dark"><%= link_to "Authors", authors_path %></span>
     <span class="p-2 text-dark"><%= link_to "About us", about_path %></span>
     <span class="p-2 text-dark"><%= link_to "CV", cv_path %></span>
   </nav>  
@@ -29,5 +30,13 @@
 <div class="container">
     <%= yield %>
 </div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+       <a> <%= link_to "Sitemap", sitemap_path %> </a>
+  </div>
+  <!-- Copyright -->
+</footer>
   </body>
 </html>
