@@ -1,0 +1,121 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.cv-wrapper {
+  margin-top: 50px;
+  padding: 0 calc(50% - 550px);
+}
+
+.cv {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.55);
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 90px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+}
+
+.info {
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 2em;
+}
+
+.contacts {
+  margin-top: 30px;
+}
+
+.contacts-item {
+  margin: 8px 0;
+}
+
+.position {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.photo-wrapper {
+  flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  object-fit: cover;
+}
+
+.footer {
+  color: #7F7F7F;
+  padding: 20px 90px;
+}
+
+.section-list {
+  margin-left: 19px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section-name {
+  margin-bottom: 10px;
+}
+
+.certificates-link {
+  color: #353535;
+  transition: .3s;
+}
+
+.certificates-link:hover {
+  color: #C4C4C4;
+}
+
+.section-item {
+  margin-bottom: 10px;
+}
+
+.section-name {
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.section-item {
+  font-size: 20px;
+}
+
+.section-list-item {
+  margin-bottom: 5px;
+}

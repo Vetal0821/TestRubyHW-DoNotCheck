@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hwblog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<header> 
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="h5 my-0 mr-md-auto font-weight-bold">RoR GH 20/21 Homework</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <span class="p-2 text-dark"><%= link_to "Main page", home_path %></span>
+    <span class="p-2 text-dark"><%= link_to "Add articles", new_post_path %></span>
+    <span class="p-2 text-dark"><%= link_to "About us", about_path %></span>
+    <span class="p-2 text-dark"><%= link_to "CV", cv_path %></span>
+  </nav>  
+    
+  
+  <a class="btn btn-outline-primary" href="#">Sign up</a>
+  </div>
+</header>
+<div class="container">
+    <%= yield %>
+</div>
+  </body>
+</html>
